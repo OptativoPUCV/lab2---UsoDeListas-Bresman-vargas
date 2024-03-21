@@ -34,3 +34,19 @@ Thu 21 Mar 2024 09:07:50 PM UTC:
  tests:  2|3
 total_score: 20/70
 62853c3
+Thu 21 Mar 2024 09:10:06 PM UTC: 
+ exercises.c | 7 +++----
+ 1 file changed, 3 insertions(+), 4 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘eliminaElementos’:
+exercises.c:81:8: error: redeclaration of ‘dato’ with no linkage
+   81 |   int *dato;= (int*)first(L);
+      |        ^~~~
+exercises.c:80:9: note: previous declaration of ‘dato’ with type ‘int *’
+   80 |    int *dato;
+      |         ^~~~
+exercises.c:81:13: error: expected expression before ‘=’ token
+   81 |   int *dato;= (int*)first(L);
+      |             ^
+Compilation failed
+3488a30
