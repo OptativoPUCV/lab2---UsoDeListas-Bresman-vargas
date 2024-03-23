@@ -370,3 +370,18 @@ Sat 23 Mar 2024 07:31:07 PM UTC:
  tests:  9|0
 total_score: 70/70
 6a0b052
+Sat 23 Mar 2024 07:33:19 PM UTC: 
+ exercises.c | 5 ++---
+ 1 file changed, 2 insertions(+), 3 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:129:7: error: unknown type name ‘har’; did you mean ‘char’?
+  129 |       har *top = (char*)pop(P);
+      |       ^~~
+      |       char
+exercises.c:129:18: error: initialization of ‘int *’ from incompatible pointer type ‘char *’ [-Werror=incompatible-pointer-types]
+  129 |       har *top = (char*)pop(P);
+      |                  ^
+cc1: all warnings being treated as errors
+Compilation failed
+87666e3
