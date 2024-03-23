@@ -118,11 +118,13 @@ int parentesisBalanceados(char *cadena) {
   Stack* P = create_stack();
   int len = strlen(cadena);
   for(int i = 0; i < len; i++){
-    if(cadena[i] == '('){
+    if(cadena[i] == '(' || cadena[i] == '[' || cadena[i] == '{'){
       push(P, &cadena[i]);
-    } else if(cadena[i] == ')'){
+      
+    } else if(cadena[i] == ')' || cadena[i] == ']' || cadena[i] == '}'){
       if(get_size(P) == 0){
         return 0;
+        
       } else {
         pop(P);
       }
