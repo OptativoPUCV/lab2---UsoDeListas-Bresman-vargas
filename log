@@ -92,3 +92,17 @@ exercises.c:127:7: error: invalid use of incomplete typedef ‘Stack’ {aka ‘
       |       ^~
 Compilation failed
 9e9d312
+Sat 23 Mar 2024 02:10:06 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:121:10: error: implicit declaration of function ‘isEmptyStack’ [-Werror=implicit-function-declaration]
+  121 |       if(isEmptyStack(P)){
+      |          ^~~~~~~~~~~~
+exercises.c:127:7: error: invalid use of incomplete typedef ‘Stack’ {aka ‘List’}
+  127 |   if(P->size == 0){
+      |       ^~
+cc1: all warnings being treated as errors
+Compilation failed
+0fe0796
