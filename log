@@ -218,3 +218,22 @@ exercises.c:131:49: error: invalid type argument of unary ‘*’ (have ‘int�
       |                                                 ^~~~
 Compilation failed
 c8d9105
+Sat 23 Mar 2024 07:18:12 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:129:18: error: called object ‘top’ is not a function or function pointer
+  129 |       char top = top(P);
+      |                  ^~~
+exercises.c:129:12: note: declared here
+  129 |       char top = top(P);
+      |            ^~~
+exercises.c:131:12: error: invalid type argument of unary ‘*’ (have ‘int’)
+  131 |         && *top != '[') || (cadena[i] == '}' && *top != '{')){
+      |            ^~~~
+exercises.c:131:49: error: invalid type argument of unary ‘*’ (have ‘int’)
+  131 |         && *top != '[') || (cadena[i] == '}' && *top != '{')){
+      |                                                 ^~~~
+Compilation failed
+d49859c
