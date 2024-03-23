@@ -106,3 +106,16 @@ exercises.c:127:7: error: invalid use of incomplete typedef ‘Stack’ {aka ‘
 cc1: all warnings being treated as errors
 Compilation failed
 0fe0796
+Sat 23 Mar 2024 02:13:05 PM UTC: 
+ exercises.c | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:121:11: error: invalid use of incomplete typedef ‘Stack’ {aka ‘List’}
+  121 |       if(P->size == 0){
+      |           ^~
+exercises.c:128:7: error: invalid use of incomplete typedef ‘Stack’ {aka ‘List’}
+  128 |   if(P->size == 0){
+      |       ^~
+Compilation failed
+ec7ff8b

@@ -118,10 +118,11 @@ int parentesisBalanceados(char *cadena) {
     if(cadena[i] == '('){
       push(P, &cadena[i]);
     } else if(cadena[i] == ')'){
-      if(isEmptyStack(P)){
+      if(P->size == 0){
         return 0;
+      } else {
+        pop(P);
       }
-      pop(P);
     }
   }
   if(P->size == 0){
