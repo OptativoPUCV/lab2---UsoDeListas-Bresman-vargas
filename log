@@ -170,3 +170,32 @@ Sat 23 Mar 2024 07:15:59 PM UTC:
  tests:  7|1
 total_score: 60/70
 2dcc691
+Sat 23 Mar 2024 07:17:12 PM UTC: 
+ exercises.c | 7 +++++--
+ 1 file changed, 5 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:129:26: error: called object ‘top’ is not a function or function pointer
+  129 |       char top = *(char*)top(P);
+      |                          ^~~
+exercises.c:129:12: note: declared here
+  129 |       char top = *(char*)top(P);
+      |            ^~~
+exercises.c:131:12: error: invalid type argument of unary ‘*’ (have ‘int’)
+  131 |         && *top != '[') || (cadena[i] == '}' && *top != '{'){
+      |            ^~~~
+exercises.c:131:49: error: invalid type argument of unary ‘*’ (have ‘int’)
+  131 |         && *top != '[') || (cadena[i] == '}' && *top != '{'){
+      |                                                 ^~~~
+exercises.c:131:61: error: expected ‘)’ before ‘{’ token
+  131 |         && *top != '[') || (cadena[i] == '}' && *top != '{'){
+      |                                                             ^
+      |                                                             )
+exercises.c:130:9: note: to match this ‘(’
+  130 |       if(cadena[i] == ')' && top == '(' || (cadena[i] == ']'
+      |         ^
+exercises.c:134:5: error: expected expression before ‘}’ token
+  134 |     }
+      |     ^
+Compilation failed
+222a621
