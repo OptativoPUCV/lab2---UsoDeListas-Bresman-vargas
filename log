@@ -272,3 +272,26 @@ exercises.c:129:12: note: declared here
       |            ^~~
 Compilation failed
 c8c53b0
+Sat 23 Mar 2024 07:19:19 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:129:27: error: called object ‘top’ is not a function or function pointer
+  129 |       char *top = *(char*)top(P);
+      |                           ^~~
+exercises.c:129:13: note: declared here
+  129 |       char *top = *(char*)top(P);
+      |             ^~~
+exercises.c:130:35: error: comparison between pointer and integer [-Werror]
+  130 |       if((cadena[i] == ')' && top == '(') || (cadena[i] == ']'
+      |                                   ^~
+exercises.c:131:16: error: comparison between pointer and integer [-Werror]
+  131 |         && top != '[') || (cadena[i] == '}' && top != '{')){
+      |                ^~
+exercises.c:131:52: error: comparison between pointer and integer [-Werror]
+  131 |         && top != '[') || (cadena[i] == '}' && top != '{')){
+      |                                                    ^~
+cc1: all warnings being treated as errors
+Compilation failed
+4dd7fc1
