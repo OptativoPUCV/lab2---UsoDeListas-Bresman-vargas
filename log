@@ -119,3 +119,9 @@ exercises.c:128:7: error: invalid use of incomplete typedef ‘Stack’ {aka ‘
       |       ^~
 Compilation failed
 ec7ff8b
+Sat 23 Mar 2024 02:13:52 PM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  6|2
+total_score: 50/70
+caf10c1
