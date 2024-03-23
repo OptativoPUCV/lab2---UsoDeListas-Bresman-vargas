@@ -123,8 +123,7 @@ int parentesisBalanceados(char *cadena) {
       
     } else if(cadena[i] == ')' || cadena[i] == ']' || cadena[i] == '}'){
       if(get_size(P) == 0){
-        return 0;  //No tuvimos una abertura
-      }
+        return 0;
         
       } 
       char *top = (char*)pop(P);
@@ -134,9 +133,8 @@ int parentesisBalanceados(char *cadena) {
       }
     } 
   }
-
   if(get_size(P) == 0){
-    return 1; 
+    return 1;
   }
   return 0;
 }
