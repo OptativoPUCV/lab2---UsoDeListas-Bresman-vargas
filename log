@@ -152,3 +152,9 @@ exercises.c:105:7: error: ‘dato_copia’ may be used uninitialized [-Werror=ma
 cc1: all warnings being treated as errors
 Compilation failed
 29065d5
+Sat 23 Mar 2024 07:11:50 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  6|2
+total_score: 50/70
+88999d2
