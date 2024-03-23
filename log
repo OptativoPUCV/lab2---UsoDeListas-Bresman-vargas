@@ -141,3 +141,14 @@ Sat 23 Mar 2024 07:05:26 PM UTC:
  tests:  6|2
 total_score: 50/70
 d366163
+Sat 23 Mar 2024 07:11:23 PM UTC: 
+ exercises.c | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘copia_pila’:
+exercises.c:105:7: error: ‘dato_copia’ may be used uninitialized [-Werror=maybe-uninitialized]
+  105 |       push(P2, dato_copia);
+      |       ^~~~~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+29065d5
