@@ -123,17 +123,20 @@ int parentesisBalanceados(char *cadena) {
       
     } else if(cadena[i] == ')' || cadena[i] == ']' || cadena[i] == '}'){
       if(get_size(P) == 0){
-        return 0;
+        return 0;  //No tuvimos una abertura
+      }
         
       } 
       char *top = (char*)pop(P);
-      if ((cadena[i] == ')' && *top != '(') || (cadena[i] == ']' && *top != '[') || (cadena[i] == '}' && *top != '{')) {
+      if ((cadena[i] == ')' && *top != '(') || (cadena[i] == ']' && *top != '[') ||
+        (cadena[i] == '}' && *top != '{')) {
           return 0;
       }
     } 
   }
+
   if(get_size(P) == 0){
-    return 1;
+    return 1; 
   }
   return 0;
 }
