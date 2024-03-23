@@ -344,3 +344,17 @@ Sat 23 Mar 2024 07:25:04 PM UTC:
  tests:  4|1
 total_score: 50/70
 041c814
+Sat 23 Mar 2024 07:26:42 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘parentesisBalanceados’:
+exercises.c:129:26: error: implicit declaration of function ‘peek’ [-Werror=implicit-function-declaration]
+  129 |       char *top = (char*)peek(P);
+      |                          ^~~~
+exercises.c:129:19: error: cast to pointer from integer of different size [-Werror=int-to-pointer-cast]
+  129 |       char *top = (char*)peek(P);
+      |                   ^
+cc1: all warnings being treated as errors
+Compilation failed
+61c9f4f
